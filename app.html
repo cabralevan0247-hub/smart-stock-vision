@@ -367,14 +367,14 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;heigh
       </div>
       <div class="form-group">
         <label>Mot de passe</label>
-        <input type="password" id="loginPassword" value="demo2025" autocomplete="off">
+        <input type="password" id="loginPassword" value="demo2026" autocomplete="off">
       </div>
       <button class="login-btn" type="button" id="loginBtn">Se connecter</button>
     </form>
     <div class="login-error" id="loginError"></div>
     <div class="demo-info">
       <strong>Compte de d&#233;monstration</strong><br>
-      demo@ssv.ch / demo2025
+      demo@ssv.ch / demo2026
     </div>
   </div>
 </div>
@@ -598,7 +598,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;heigh
 
       <!-- ════ PAGE: REPORTS ════ -->
       <div class="page" id="page-reports">
-        <div class="page-title">Rapports &#8212; Mars 2025</div>
+        <div class="page-title">Rapports &#8212; Mars 2026</div>
         <div class="report-kpis">
           <div class="report-kpi"><div class="report-kpi-value" style="color:var(--teal)" data-count="4850" data-prefix="&#8364;">&#8364;0</div><div class="report-kpi-label">Total &#233;conomies</div></div>
           <div class="report-kpi"><div class="report-kpi-value" style="color:var(--orange)" data-count="23" data-suffix=" kg">0 kg</div><div class="report-kpi-label">Gaspillage &#233;vit&#233;</div></div>
@@ -679,21 +679,21 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;heigh
 // DATA
 // ══════════════════════════════════════
 const PRODUCTS = [
-  {name:"Champagne Mo\u00ebt",cat:"Boissons",zone:"Cave",qty:3,unit:"btl",seuil:10,status:"CRITIQUE",exp:"28/03/2025"},
-  {name:"C\u00f4te de b\u0153uf",cat:"Viandes",zone:"Chambre froide 1",qty:2,unit:"kg",seuil:5,status:"BAS",exp:"22/03/2025"},
-  {name:"Saumon fum\u00e9",cat:"Poissons",zone:"Chambre froide 2",qty:3.5,unit:"kg",seuil:3,status:"OK",exp:"24/03/2025"},
+  {name:"Champagne Mo\u00ebt",cat:"Boissons",zone:"Cave",qty:3,unit:"btl",seuil:10,status:"CRITIQUE",exp:"28/03/2026"},
+  {name:"C\u00f4te de b\u0153uf",cat:"Viandes",zone:"Chambre froide 1",qty:2,unit:"kg",seuil:5,status:"BAS",exp:"22/03/2026"},
+  {name:"Saumon fum\u00e9",cat:"Poissons",zone:"Chambre froide 2",qty:3.5,unit:"kg",seuil:3,status:"OK",exp:"24/03/2026"},
   {name:"Linge de bain",cat:"Linge",zone:"Lingerie",qty:48,unit:"pcs",seuil:30,status:"OK",exp:"\u2014"},
-  {name:"Caf\u00e9 arabica",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:1.2,unit:"kg",seuil:2,status:"ATTENTION",exp:"15/06/2025"},
-  {name:"Huile d\u2019olive extra",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:5,unit:"L",seuil:3,status:"OK",exp:"10/09/2025"},
-  {name:"Beurre AOP",cat:"Produits laitiers",zone:"Chambre froide 1",qty:4,unit:"kg",seuil:3,status:"OK",exp:"02/04/2025"},
-  {name:"Cr\u00e8me fra\u00eeche",cat:"Produits laitiers",zone:"Chambre froide 1",qty:2,unit:"L",seuil:5,status:"BAS",exp:"22/03/2025"},
+  {name:"Caf\u00e9 arabica",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:1.2,unit:"kg",seuil:2,status:"ATTENTION",exp:"15/06/2026"},
+  {name:"Huile d\u2019olive extra",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:5,unit:"L",seuil:3,status:"OK",exp:"10/09/2026"},
+  {name:"Beurre AOP",cat:"Produits laitiers",zone:"Chambre froide 1",qty:4,unit:"kg",seuil:3,status:"OK",exp:"02/04/2026"},
+  {name:"Cr\u00e8me fra\u00eeche",cat:"Produits laitiers",zone:"Chambre froide 1",qty:2,unit:"L",seuil:5,status:"BAS",exp:"22/03/2026"},
   {name:"Vin rouge Bordeaux",cat:"Boissons",zone:"Cave",qty:24,unit:"btl",seuil:12,status:"OK",exp:"\u2014"},
-  {name:"Sel de Gu\u00e9rande",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:3,unit:"kg",seuil:2,status:"OK",exp:"01/12/2025"},
-  {name:"Filet de canard",cat:"Viandes",zone:"Chambre froide 2",qty:1.5,unit:"kg",seuil:3,status:"BAS",exp:"23/03/2025"},
-  {name:"Chocolat Valrhona",cat:"P\u00e2tisserie",zone:"R\u00e9serve s\u00e8che",qty:2,unit:"kg",seuil:1.5,status:"OK",exp:"30/08/2025"},
+  {name:"Sel de Gu\u00e9rande",cat:"\u00c9picerie",zone:"R\u00e9serve s\u00e8che",qty:3,unit:"kg",seuil:2,status:"OK",exp:"01/12/2027"},
+  {name:"Filet de canard",cat:"Viandes",zone:"Chambre froide 2",qty:1.5,unit:"kg",seuil:3,status:"BAS",exp:"23/03/2026"},
+  {name:"Chocolat Valrhona",cat:"P\u00e2tisserie",zone:"R\u00e9serve s\u00e8che",qty:2,unit:"kg",seuil:1.5,status:"OK",exp:"30/08/2026"},
   {name:"Serviettes table",cat:"Linge",zone:"Lingerie",qty:120,unit:"pcs",seuil:80,status:"OK",exp:"\u2014"},
-  {name:"Gel douche luxury",cat:"Amenities",zone:"\u00c9conomat",qty:35,unit:"pcs",seuil:20,status:"OK",exp:"12/2026"},
-  {name:"Champignon frais",cat:"L\u00e9gumes",zone:"Chambre froide 1",qty:0.8,unit:"kg",seuil:1.5,status:"BAS",exp:"21/03/2025"}
+  {name:"Gel douche luxury",cat:"Amenities",zone:"\u00c9conomat",qty:35,unit:"pcs",seuil:20,status:"OK",exp:"12/2027"},
+  {name:"Champignon frais",cat:"L\u00e9gumes",zone:"Chambre froide 1",qty:0.8,unit:"kg",seuil:1.5,status:"BAS",exp:"21/03/2026"}
 ];
 
 const CAMERAS = [
@@ -732,27 +732,27 @@ const ALERTS = [
   {severity:"urgent",icon:"\u25B2",msg:"Cr\u00e8me fra\u00eeche expire dans 2 jours \u2014 Utiliser en priorit\u00e9",time:"Il y a 1 h",actionLabel:"Voir"},
   {severity:"attention",icon:"\u25CF",msg:"Filet de canard sous le seuil (1.5/3 kg)",time:"Il y a 2 h",actionLabel:"Voir"},
   {severity:"attention",icon:"\u25CF",msg:"Champignons frais \u2014 p\u00e9remption dans 3 jours",time:"Il y a 3 h",actionLabel:"Voir"},
-  {severity:"info",icon:"\u25CB",msg:"Commande automatique #BC-2025-019 envoy\u00e9e \u00e0 Prodega",time:"Il y a 4 h",actionLabel:null},
+  {severity:"info",icon:"\u25CB",msg:"Commande automatique #BC-2026-019 envoy\u00e9e \u00e0 Prodega",time:"Il y a 4 h",actionLabel:null},
   {severity:"info",icon:"\u25CB",msg:"Cam\u00e9ra Minibar stock en maintenance planifi\u00e9e",time:"Il y a 5 h",actionLabel:null},
   {severity:"info",icon:"\u25CB",msg:"Rapport hebdomadaire disponible",time:"Il y a 6 h",actionLabel:"T\u00e9l\u00e9charger"}
 ];
 
 const ORDERS = [
-  {id:"BC-2025-019",date:"20/03/2025",supplier:"Prodega",count:4,amount:"1 245",status:"attente",
+  {id:"BC-2026-019",date:"20/03/2026",supplier:"Prodega",count:4,amount:"1 245",status:"attente",
     items:[{name:"Champagne Mo\u00ebt",qty:"12 btl",price:"\u20ac480"},{name:"C\u00f4te de b\u0153uf",qty:"8 kg",price:"\u20ac320"},{name:"Filet de canard",qty:"5 kg",price:"\u20ac275"},{name:"Champignon frais",qty:"3 kg",price:"\u20ac170"}]},
-  {id:"BC-2025-018",date:"18/03/2025",supplier:"Aligro",count:6,amount:"890",status:"validee"},
-  {id:"BC-2025-017",date:"15/03/2025",supplier:"Cave SA",count:2,amount:"2 340",status:"livree"},
-  {id:"BC-2025-016",date:"12/03/2025",supplier:"Prodega",count:5,amount:"1 567",status:"livree"},
-  {id:"BC-2025-015",date:"08/03/2025",supplier:"Bischofszell",count:3,amount:"445",status:"livree"},
-  {id:"BC-2025-014",date:"05/03/2025",supplier:"Aligro",count:7,amount:"1 890",status:"livree"}
+  {id:"BC-2026-018",date:"18/03/2026",supplier:"Aligro",count:6,amount:"890",status:"validee"},
+  {id:"BC-2026-017",date:"15/03/2026",supplier:"Cave SA",count:2,amount:"2 340",status:"livree"},
+  {id:"BC-2026-016",date:"12/03/2026",supplier:"Prodega",count:5,amount:"1 567",status:"livree"},
+  {id:"BC-2026-015",date:"08/03/2026",supplier:"Bischofszell",count:3,amount:"445",status:"livree"},
+  {id:"BC-2026-014",date:"05/03/2026",supplier:"Aligro",count:7,amount:"1 890",status:"livree"}
 ];
 
 const SUPPLIERS = [
-  {name:"Prodega",type:"Grossiste alimentaire",contact:"Jean Martin",tel:"+41 22 345 67 89",email:"j.martin@prodega.ch",reliability:94,delivery:"24h",spend:"\u20ac12 450",lastOrder:"20/03/2025"},
-  {name:"Aligro",type:"Grossiste alimentaire",contact:"Sophie Blanc",tel:"+41 22 789 01 23",email:"s.blanc@aligro.ch",reliability:91,delivery:"48h",spend:"\u20ac9 870",lastOrder:"18/03/2025"},
-  {name:"Cave SA",type:"Vins et spiritueux",contact:"Pierre Rochat",tel:"+41 21 456 78 90",email:"p.rochat@cavesa.ch",reliability:97,delivery:"72h",spend:"\u20ac7 230",lastOrder:"15/03/2025"},
-  {name:"Bischofszell",type:"Produits frais",contact:"Anna Weber",tel:"+41 71 234 56 78",email:"a.weber@bischofszell.ch",reliability:89,delivery:"24h",spend:"\u20ac4 560",lastOrder:"08/03/2025"},
-  {name:"Diversey",type:"Produits d\u2019entretien",contact:"Marc Favre",tel:"+41 22 678 90 12",email:"m.favre@diversey.ch",reliability:92,delivery:"5 jours",spend:"\u20ac2 340",lastOrder:"01/03/2025"}
+  {name:"Prodega",type:"Grossiste alimentaire",contact:"Jean Martin",tel:"+41 22 345 67 89",email:"j.martin@prodega.ch",reliability:94,delivery:"24h",spend:"\u20ac12 450",lastOrder:"20/03/2026"},
+  {name:"Aligro",type:"Grossiste alimentaire",contact:"Sophie Blanc",tel:"+41 22 789 01 23",email:"s.blanc@aligro.ch",reliability:91,delivery:"48h",spend:"\u20ac9 870",lastOrder:"18/03/2026"},
+  {name:"Cave SA",type:"Vins et spiritueux",contact:"Pierre Rochat",tel:"+41 21 456 78 90",email:"p.rochat@cavesa.ch",reliability:97,delivery:"72h",spend:"\u20ac7 230",lastOrder:"15/03/2026"},
+  {name:"Bischofszell",type:"Produits frais",contact:"Anna Weber",tel:"+41 71 234 56 78",email:"a.weber@bischofszell.ch",reliability:89,delivery:"24h",spend:"\u20ac4 560",lastOrder:"08/03/2026"},
+  {name:"Diversey",type:"Produits d\u2019entretien",contact:"Marc Favre",tel:"+41 22 678 90 12",email:"m.favre@diversey.ch",reliability:92,delivery:"5 jours",spend:"\u20ac2 340",lastOrder:"01/03/2026"}
 ];
 
 // ══════════════════════════════════════
@@ -779,11 +779,11 @@ const sidebarOverlay = $('#sidebarOverlay');
 // ══════════════════════════════════════
 function doLogin(){
   const e = loginEmail.value.trim(), p = loginPassword.value;
-  if(e === 'demo@ssv.ch' && p === 'demo2025'){
+  if(e === 'demo@ssv.ch' && p === 'demo2026'){
     loginScreen.classList.add('hidden');
     setTimeout(function(){ onboarding.classList.add('show'); }, 500);
   } else {
-    loginError.textContent = 'Identifiants incorrects. Essayez demo@ssv.ch / demo2025';
+    loginError.textContent = 'Identifiants incorrects. Essayez demo@ssv.ch / demo2026';
     loginPassword.value = '';
   }
 }
@@ -1146,7 +1146,7 @@ function buildCriticalStocks(){
 }
 
 function buildExpiringProducts(){
-  var now = new Date(2025, 2, 20);
+  var now = new Date(2026, 2, 20);
   var expiring = [];
   PRODUCTS.forEach(function(p){
     if(p.exp === '\u2014') return;
@@ -1232,9 +1232,9 @@ function buildStockBars(){
 function buildActivityFeed(){
   var items = [
     {color:"var(--coral)",text:"Alerte critique : Champagne Mo\u00ebt sous le seuil",time:"Il y a 12 min"},
-    {color:"var(--blue)",text:"Commande #BC-2025-019 g\u00e9n\u00e9r\u00e9e automatiquement",time:"Il y a 28 min"},
+    {color:"var(--blue)",text:"Commande #BC-2026-019 g\u00e9n\u00e9r\u00e9e automatiquement",time:"Il y a 28 min"},
     {color:"var(--orange)",text:"Cam\u00e9ra Minibar stock en maintenance",time:"Il y a 1 h"},
-    {color:"var(--teal)",text:"Livraison #BC-2025-017 confirm\u00e9e par Cave SA",time:"Il y a 3 h"},
+    {color:"var(--teal)",text:"Livraison #BC-2026-017 confirm\u00e9e par Cave SA",time:"Il y a 3 h"},
     {color:"var(--purple)",text:"Rapport hebdomadaire g\u00e9n\u00e9r\u00e9 avec succ\u00e8s",time:"Il y a 6 h"},
     {color:"var(--teal)",text:"Inventaire Chambre froide 2 v\u00e9rifi\u00e9 par IA",time:"Il y a 8 h"}
   ];
@@ -1570,7 +1570,7 @@ function openCameraModal(i){
       (isOnline ? '<div style="position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:6px;font-size:.7rem;font-weight:700;color:var(--coral);z-index:2"><span style="width:7px;height:7px;background:var(--coral);border-radius:50%;display:inline-block;animation:pulse 1.5s infinite"></span> REC</div>' : '') +
       '<div style="position:absolute;top:12px;right:12px;font-size:.7rem;color:rgba(255,255,255,0.5);z-index:2">1920\u00d71080 @ 30fps</div>' +
       '<div style="position:absolute;bottom:12px;left:12px;font-size:.75rem;font-weight:600;color:rgba(255,255,255,0.6);z-index:2">'+tempStr+'</div>' +
-      '<div style="position:absolute;bottom:12px;right:12px;font-size:.7rem;color:rgba(255,255,255,0.4);z-index:2">20/03/2025 '+timeStr+'</div>' +
+      '<div style="position:absolute;bottom:12px;right:12px;font-size:.7rem;color:rgba(255,255,255,0.4);z-index:2">20/03/2026 '+timeStr+'</div>' +
     '</div>' +
 
     // two-column layout
@@ -1639,7 +1639,7 @@ function renderInvTable(data){
       var parts = p.exp.split('/');
       if(parts.length === 3){
         var d = new Date(parseInt(parts[2]), parseInt(parts[1])-1, parseInt(parts[0]));
-        var ref = new Date(2025, 2, 20);
+        var ref = new Date(2026, 2, 20);
         var diff = (d - ref) / (1000*60*60*24);
         if(diff <= 2) expClass = 'exp-critical';
         else if(diff <= 5) expClass = 'exp-soon';
@@ -1817,7 +1817,7 @@ function buildSuppliers(){
           '<div class="supplier-stat-value">'+s.delivery+'</div>' +
         '</div>' +
         '<div>' +
-          '<div class="supplier-stat-label">D\u00e9penses 2025</div>' +
+          '<div class="supplier-stat-label">D\u00e9penses 2026</div>' +
           '<div class="supplier-stat-value">'+s.spend+'</div>' +
         '</div>' +
       '</div>' +
