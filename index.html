@@ -2847,19 +2847,28 @@ section {
       <div class="roi-inputs reveal">
         <div class="roi-input-group">
           <label for="roiRooms">Nombre de chambres</label>
-          <input type="range" id="roiRooms" min="1" max="500" value="100" step="1">
+          <input type="range" id="roiRooms" min="0" max="500" value="100" step="1">
           <div class="roi-value-display">
             <span class="roi-current-value" id="roiRoomsVal">100</span>
-            <span class="roi-range-labels">1 &mdash; 500 chambres</span>
+            <span class="roi-range-labels">0 &mdash; 500 chambres</span>
+          </div>
+        </div>
+
+        <div class="roi-input-group">
+          <label for="roiSeats">Nombre de couverts / places restaurant</label>
+          <input type="range" id="roiSeats" min="0" max="500" value="80" step="1">
+          <div class="roi-value-display">
+            <span class="roi-current-value" id="roiSeatsVal">80</span>
+            <span class="roi-range-labels">0 &mdash; 500 couverts</span>
           </div>
         </div>
 
         <div class="roi-input-group">
           <label for="roiFoodCost">Co&ucirc;t alimentaire mensuel (&euro;)</label>
-          <input type="range" id="roiFoodCost" min="5000" max="200000" value="40000" step="1000">
+          <input type="range" id="roiFoodCost" min="1000" max="200000" value="40000" step="500">
           <div class="roi-value-display">
             <span class="roi-current-value" id="roiFoodCostVal">&euro;40 000</span>
-            <span class="roi-range-labels">&euro;5 000 &mdash; &euro;200 000</span>
+            <span class="roi-range-labels">&euro;1 000 &mdash; &euro;200 000</span>
           </div>
         </div>
 
@@ -3160,7 +3169,7 @@ section {
         <div class="team-avatar avatar-ceo">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <div class="team-role">CEO</div>
+        <div class="team-role">CO-CEO</div>
         <h3>Sam Ormond</h3>
         <p>Vision strat&eacute;gique, gestion h&ocirc;teli&egrave;re &amp; business development</p>
         <div class="team-badge">EHG</div>
@@ -3170,7 +3179,7 @@ section {
         <div class="team-avatar avatar-cto">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <div class="team-role">CTO</div>
+        <div class="team-role">CO-CEO</div>
         <h3>Evan Cabral</h3>
         <p>IA, cam&eacute;ras, marketing &amp; computer vision</p>
         <div class="team-badge">EHG</div>
@@ -3180,7 +3189,7 @@ section {
         <div class="team-avatar avatar-coo">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
         </div>
-        <div class="team-role">COO</div>
+        <div class="team-role">CO-CEO</div>
         <h3>Alexis Villet</h3>
         <p>Op&eacute;rations, logistique, installation &amp; support client</p>
         <div class="team-badge">EHG</div>
@@ -3190,7 +3199,7 @@ section {
         <div class="team-avatar avatar-cmo">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
-        <div class="team-role">CMO</div>
+        <div class="team-role">CO-CEO</div>
         <h3>Vladimir Messieux</h3>
         <p>Partnerships &amp; ventes h&ocirc;teli&egrave;res</p>
         <div class="team-badge">EHG</div>
@@ -3398,6 +3407,7 @@ function animateCounter(el) {
 
 /* ===================== ROI CALCULATOR ===================== */
 const roiRooms = document.getElementById('roiRooms');
+const roiSeats = document.getElementById('roiSeats');
 const roiFoodCost = document.getElementById('roiFoodCost');
 const roiWaste = document.getElementById('roiWaste');
 
@@ -3407,10 +3417,12 @@ function formatEuro(n) {
 
 function updateROI() {
   const rooms = parseInt(roiRooms.value);
+  const seats = parseInt(roiSeats.value);
   const foodCost = parseInt(roiFoodCost.value);
   const waste = parseInt(roiWaste.value);
 
   document.getElementById('roiRoomsVal').textContent = rooms;
+  document.getElementById('roiSeatsVal').textContent = seats;
   document.getElementById('roiFoodCostVal').textContent = formatEuro(foodCost);
   document.getElementById('roiWasteVal').textContent = waste + '%';
 
@@ -3419,8 +3431,8 @@ function updateROI() {
   const savingsMonth = wasteCost * reductionRate;
   const savingsYear = savingsMonth * 12;
 
-  /* Time saved: based on rooms, avg 6.5h/week for manual, SSV saves ~80% */
-  const hoursPerMonth = Math.round(Math.min(rooms * 0.35, 80));
+  /* Time saved: based on rooms + seats */
+  const hoursPerMonth = Math.round(Math.min((rooms * 0.25) + (seats * 0.15), 80));
 
   /* Payback: installation cost (Pro plan) / monthly savings */
   const installCost = 3000;
@@ -3437,6 +3449,7 @@ function updateROI() {
 }
 
 roiRooms.addEventListener('input', updateROI);
+roiSeats.addEventListener('input', updateROI);
 roiFoodCost.addEventListener('input', updateROI);
 roiWaste.addEventListener('input', updateROI);
 updateROI();
