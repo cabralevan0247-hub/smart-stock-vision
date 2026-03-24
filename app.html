@@ -998,7 +998,7 @@ function drawFridgeFeed(canvas, camIndex, detailed){
 // CONFORMITY SCORE
 // ══════════════════════════════════════
 function calcConformityScore(cam){
-  if(cam.status!=='online') return {score:0,color:'var(--muted)',cls:'maint',label:'N/A'};
+  if(cam.status!=='online') return {score:0,color:'var(--muted)',cls:'maint',label:'N/A',tempScore:0,stockScore:0,expiryScore:0};
   // temperature: 40%
   var tScore = 100;
   if(cam.temp!==null){
